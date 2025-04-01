@@ -1,0 +1,647 @@
+<!doc type html>
+<html>
+<head> <title> F1 website </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+html
+{scroll-behavior:smooth;
+}
+
+
+nav
+{display:flex;
+padding:0px;}
+
+#logo
+{
+width:20%;
+height:20%;
+}
+
+
+#logo1
+{background:ed;
+width:85%;
+margin-left:100px;
+
+}
+
+#logo1 ul {
+    list-style: none;
+    padding:2;
+
+}
+
+#logo1 ul li {
+    display: inline;
+    margin:40px;
+   padding:7px;
+}
+
+#logo1 ul li a {
+    color:black;
+    text-decoration: none;
+    font-size:24px;
+    font-family:verdana;
+     padding:4px;
+}
+
+#logo1 ul li a:hover {
+   cursor:pointer;
+   background:red;
+color:white;
+   color:white;
+   border-radius:10px;
+   transition:0.3s;
+}
+
+#main
+{
+height:100%;
+width:100%;
+background-image:url(images/r3.jpg);
+background-size:100% 100%;
+opacity:1;}
+
+
+#text
+{
+margin-left:1px;
+padding:50px;
+width:30%;
+height:70%;
+background:reen;
+color:white;
+font-family:Tahoma;
+}
+
+#text h1
+{font-size:400%;}
+
+#text h5
+{font-size:130%;
+}
+
+#text h6
+{font-family:arial;
+font-size:160%;
+text-align:center;
+color:black;
+background:white;
+border-radius:20px;
+}
+
+#text h6:hover
+{font-family:arial;
+cursor:pointer;
+color:black;
+transform:scale(1.25);
+background:white;
+transition:0.5s;
+}
+
+
+#map
+{width:100%;
+display:flex;
+height:40%;
+background:black;
+}
+
+
+#map2 
+{color:white;
+font-family:verdana;
+font-size:120%;
+margin-left:25px;
+}
+
+#map2 h3
+{color:red;
+font-family:verdana thin;
+font-size:250%;}
+
+#map1
+{background:rd;
+margin-left:200px;}
+
+
+section
+{width:100%;
+height:55%;
+background:black;
+display:flex;}
+
+
+
+.card
+{padding:20px;
+width:25%;
+color:white;
+height:80%;
+font-family:verdana;
+text-align:center;}
+
+.card:hover
+{transform:scale(1.1);
+transition:0.4s;
+}
+
+.card h5
+{color:#fc6809;}
+
+
+#heading
+{font-size:140%;
+background:red;
+font-family:verdana thin;
+text-align:center;
+color:white;}
+
+#rating
+{width:100%;
+height:75%;
+margin-top:0px;
+background:black;
+display:flex;
+justify-content:center;}
+
+
+
+
+#rating h1
+{background:white;
+margin-top:30px;
+boder:10px white solid;
+padding:8px;
+border-radius:8px;
+font-size:200%;
+}
+
+
+#rating h1:hover
+{transform:scale(1.4);
+transition:0.4s;
+}
+
+
+#slast
+{background:#161616;
+width:100%;
+height:60%;
+display:flex;}
+
+#for1
+{margin:auto;
+color:white;
+font-family:verdana;}
+
+#for1:hover
+{transform:scale(1.2);
+transition:0.3s;
+box-shadow:5px 5px 10px white;}
+
+
+#contact
+{width:100%;
+display:flex;
+height:50%;
+background:red;}
+
+.new
+{width:18%;
+background:lack;
+color:white;
+height:100%;
+
+}
+
+.new h1
+{padding:10px;
+font-size:80%;
+font-family:verdana;
+margin:20px;}
+
+
+
+#term
+{width:100%;
+height:10%;
+background:black;
+display:flex;
+justify-content:right;
+}
+#term ol
+{}
+
+#term ol li
+{display:inline;
+color:white;
+font-family:verdana thin;
+padding:25px;}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down)  */
+
+@media only screen and (max-width: 350px)
+ { 	
+
+  body {
+    
+    font-size: 12px;
+  }
+
+nav
+{background:gray;
+height:5%;
+overflow:hidden;
+}
+
+nav:hover
+{
+height:26%;
+}
+
+
+  #logo img {
+    width: 70px;  
+  }
+
+  #logo1 {
+    margin-left:70;
+margin-top:-12px;
+    width: 20%;
+    height:10%;
+
+  }
+
+  #logo1 ul li {
+    display: block;
+    margin:0px ;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #logo1 ul li a {
+    font-size: 12px;
+    color:white;
+    padding: 2px;
+  }
+
+  #text {
+    width: 10%;
+    padding: 20px;
+    margin-left: 10px;
+
+  
+  }
+ #text h1,h5,h6
+  {margin-top:30px;}
+
+
+
+#text h1 {
+    font-size: 130%;
+  }
+
+  #text h5 {
+    font-size: 120%;
+  }
+#text h6
+{font-family:arial;
+font-size:75%;
+color:black;
+background:white;
+border-radius:0px;
+}
+
+#text h6:hover
+{font-family:arial;
+cursor:pointer;
+color:black;
+transform:scale(1.25);
+background:white;
+transition:0.5s;
+}
+
+  #map {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #map2 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #map1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .card h5 {
+    font-size: 14px;
+  }
+
+  #rating h1 {
+    font-size: 150%;
+    padding: 6px;
+  }
+
+  #slast {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  #for1 img
+{width:70%;}
+ 
+  #for1 {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  #contact {width:100%;
+font-size:30%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .new {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .new h1 {
+    font-size: 10px;
+    margin:auto;
+  }
+
+  #term ol li {
+    display:inline;
+    font-size:80%;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+
+
+
+</style>
+<body>
+
+<nav id="navbar">
+ 
+<div id="logo">
+<img src="images/lo.png"width="220px">
+
+  </div>
+ 
+
+<div id="logo1"> 
+<ul>
+<li><a href="#main">Home</a></li>
+<li><a href="#map2">Event</a></li>
+<li><a href="#rating">Schedule</a></li>
+<li><a href="#contact"> Contact</a></li>
+<li><a href="#">Book Now</a></li>
+</ul>
+</div>
+</nav>
+
+
+
+<div id="main">
+<div id="text">
+<h1> 2025
+FORMULA 1
+</h1>
+
+<h5>
+INDIA'S GREATEST F1
+RACING EVENT EVER
+</h5>
+<h5 style=color:#de3c00;>
+TAKE ADVANTAGE OF EARLY BIRD PRICING
+</h5>
+
+<h6>
+TICKET NOW ON SALE
+</h6>
+
+</div>
+</div>
+
+<div id="map">
+
+
+<div id="map2">
+<h1>INDIAN GRAND PREMIER LEAGUE
+</h1>
+<h3>PRACTISE 1:11d:15H:26M
+</h3>
+</div>
+
+<div id="map1">
+<img src="images/r4.png" width="300px">
+</div>
+</div>
+
+
+<section>
+
+<div id="card1" class="card">
+<img src="images/di1.jpg">
+<h1>BELIVE TO BE BEST </h1>
+<h5> FOR THE FIRST TIME IN INDIA
+HE IS COMING TO FINISH WHAT REMAIN LEFT.  </h5>
+</div>
+
+<div id="card2" class="card">
+<img src="images/di2.jpg">
+<h1>FEMAL ENPOWER </h1>
+<h5> SHE IS COMING TO SHOW THE POWER 
+</h5>
+</div>
+
+<div id="card3" class="card">
+<img src="images/di3.jpg">
+<h1> WORLD CHAMPION </h1>
+<h5>4 TIMES WORLD CHAMPION WANTS A NEW TITLE
+</h5>
+</div>
+
+
+<div id="card4" class="card">
+<img src="images/di4.jpg">
+<h1>JAPAN POWER </h1>
+<h5>THE SUPER JAPAN MOTOR POWER 
+</h5>
+</div>
+
+</section>
+
+<div id="heading">
+<h1>
+EVENT INFORMATION
+</h1>
+</div>
+
+<div id="rating">
+<div id="rev"> 
+<h1 style=color:red;>
+LIST OF EVENTS
+</h1>
+<h1>
+ELITE ↹ PUNJABI WARRIOR 
+</h1>
+<h1>
+NEW DELHI ↹ ELITE
+</h1>
+<h1>
+BUENOS↹LA RULAR
+</h1>
+<h1>
+AMSTERDAM↹DE KATHNOL
+</h1>
+</div>
+</div>
+
+<div id="slast">
+
+<div id="for1">
+<img src="images/for1.jpg" width="350px">
+<h4> GET WHAT YOU DESERVE </h4>
+</div>
+
+<div id="for1">
+<img src="images/for2.jpg" width="350px">
+<h4> CLASS TAKES EXTREME CHOICE </h4>
+</div>
+
+<div id="for1">
+<img src="images/for3.jpg" width="350px">
+<h4> JUST PURE MADNESS </h4>
+</div>
+
+</div>
+
+
+<div id="contact">
+
+
+<div id="new1"class="new">
+<h1>
+RACES
+</h1>
+<h1>
+IN DETAILS
+</h1>
+<h1>
+CALENDER
+</h1>
+<h1>
+DOWNLOAD
+</h1>
+</div>
+
+<div id="new3"class="new">
+<h1>
+TERM AND CONDITION
+</h1>
+<h1>
+TERMS
+</h1>
+<h1>
+DRIVER
+</h1>
+<h1>
+HALL OF FRAME
+</h1>
+</div>
+
+<div id="new2"class="new">
+<h1>
+NEWS
+</h1>
+<h1>
+FEATURE
+</h1>
+<h1>
+HEADLINE
+</h1>
+<h1>
+INTERVIEW
+</h1>
+<h1>
+FEED
+</h1>
+</div>
+
+
+
+<div id="new2"class="new">
+<h1>
+INSIDE US
+</h1>
+<h1>
+VIDEOS
+</h1>
+<h1>
+CONTACT
+</h1>
+<h1>
+EMAIL
+</h1>
+
+</div>
+
+
+
+
+<div id="new2"class="new">
+<h1>
+@F1 RACING 
+</h1>
+<h1>
++91-888-999-0091
+</h1>
+<h1>
+@f1123@gmail.com
+</h1>
+</div>
+</div>
+
+
+<div id="term">
+<ol>
+<li>Policy</li> 
+ <li>Guideline</li>
+<li> 2005* </li>
+ <li>My Detail</li>
+ <li>2025 guidelines </li>
+</ol>
+</div>
+
+
+</body>
+</html>
+
