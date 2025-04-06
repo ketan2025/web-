@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(images/cl1.jpg);
+    
+    }
+    .box
+    {width: 40%;
+    height:70px;
+    margin:auto;
+    margin-top: 240px;
+    background:rgb(95, 95, 95);
+    text-align: center;
+    color: aliceblue;
+    border-radius: 100px;
+    font-size: 70px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;}
+</style>
+<body>
+   <script>
+  
+   
+   
+   var d = document.createElement("div")
+    document.body.appendChild(d)
+    d.className="box"
+   
+    var t
+    function show_clock()
+    {
+        t = new Date()
+        d.innerHTML= t.toLocaleTimeString()
+    }
+    var s = setInterval("show_clock()",1000)
+    
+    
+   
+
+
+
+    document.title="no error"
+   </script>
+</body>
+</html>
