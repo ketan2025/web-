@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ body{
+    background-color: rgb(47, 209, 171);
+ }
+ 
+ body h1
+   {text-align: center;
+font-size: 300%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:firebrick}
+   
+    .picstyle
+    {width:40%;
+    margin: 50px;
+    border: 4px solid black;
+    transition: 0.2s;
+    box-shadow: 4px 4px 4px black;}
+
+    .picstyle:hover
+    {width:42%;
+    border: 4px solid rgb(164, 185, 0);
+    box-shadow: 7px 7px 8px rgb(164, 185, 0); }
+</style>
+<body>
+    <h1>
+        Wild Life Photography
+    </h1>
+    <script>
+        var p ;
+       for(var i = 1;i<=20;i++)
+        {
+             p = document.createElement("img")
+        p.src="images/a"+i+".jpg"
+        document.body.appendChild(p)
+        p.className="picstyle"}
+
+     
+
+        document.title="no error"
+    </script>
+
+</body>
+</html>
