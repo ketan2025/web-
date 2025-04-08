@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#newstoday
+{width:80%;
+    margin:auto;
+    height:200px;
+    color:rgb(255, 0, 0);
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding:30px;
+    text-transform: uppercase;
+
+}
+</style>
+<body>
+    <div id="newstoday">
+        News
+    </div>
+    <script>
+ var b =document.getElementById("newstoday")
+ var news=["The promise and perils of chilli farming for the tribes in Telangana","Using snakes as influencers: An environmental campaign in Mizoram","From self to society: Navigating silence and stigma around mental health","Sales and sisterhood: What drives a small-scale business in Pune","Why dont nonprofits talk about their failures?"]
+    var c=0
+    b.innerHTML=news[0]
+    function change_news()
+    { if (c<news.length-1)
+    {c++}
+    else{
+        c=0
+    }
+    b.innerHTML=news[c]
+   
+    }
+    function startnews()
+    {
+        setInterval("change_news()",1000)
+    }
+    document.title ="ready"
+    </script>
+</body>
+</html>
