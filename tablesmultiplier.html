@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+   background-image: url(images/cbg.jpg);
+   background-size:100% 100% ;
+    }
+    #main
+    {width:100%;
+    text-align:center;
+    margin:auto;
+    padding:10px ;
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    }
+</style>
+<body>
+    <div id="main">
+    <script>
+    var n = 1
+    var a = prompt("Enter a number for table you want...")
+
+   document.write(`<p style="color:red;font-size:36px">Table of ${a}</p>`)
+
+
+   //loop
+   while(n<=10)
+   {
+   document.write(`<p> ${a} * ${n} = ${a*n}</p>`)
+   n++
+
+   }
+        
+
+    </script>
+    </div>
+</body>
+</html>
