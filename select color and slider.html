@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #t1{
+        font-size: 40px;
+        color:black;
+    }
+</style>
+<body>
+    <input type="color" id="mybox">
+    <input type="color" id="mybox2">
+    <p id="text" style="font-size:40px;">change font size</p>
+    <input id="slider1" type="range" max="100" min="10" value="1">
+    <div id="t1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores soluta blanditiis rem explicabo dolores, animi veniam. Omnis enim id ut voluptate non soluta, iste perferendis, odio dolorem nobis culpa accusamus.
+    </div>
+<script>
+var c = document.getElementById("mybox")
+
+var c2 = document.getElementById("mybox2")
+
+var s1 = document.getElementById("slider1")
+
+var t = document.getElementById("text")
+
+var t1 = document.getElementById("t1")
+
+
+s1.onchange = function()
+{
+ 
+ text.style.fontSize = s1.value+"px"
+ t1.style.fontSize = s1.value+"px"
+
+}
+
+c2.onchange=function()
+{   text.style.color=c2.value
+    t1.style.color=c2.value
+}
+
+c.onchange=function()
+{
+document.body.style.background=c.value
+
+}
+
+</script>
+
+</body>
+</html>
