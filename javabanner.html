@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: auto;
+    padding: 0;
+    transition: 0.5s;
+    text-align: center;
+
+}
+header{
+    width: 70%;
+    height: 70%;
+}
+</style>
+<body>
+    <header>
+        <h1 id="text">Image of the day </h1>
+        <img src="images/bn1.jpg"class="pic">
+    </header>
+    <script>
+var p = document.getElementById("pic")
+var t = document.getElementById("text")
+
+
+
+//var today = new Date().getDay()
+
+var today=3
+
+switch(today)
+{
+case 1:
+p.src="images/bn2.jpg"
+break;
+
+case 2:
+p.src="images/bn3.jpg"
+break;
+
+case 3:
+p.src="images/bn4.jpg"
+break;
+
+case 4:
+p.src="images/bn4.jpg"
+break;
+
+}
+
+document.title= "noerror"
+
+    </script>
+</body>
+</html>
