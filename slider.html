@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+input{
+    width: 80px;
+    text-align: center;
+}
+
+#box{
+    background-color: rgb(169, 169, 169);
+    
+    text-align: justify;
+}
+#box h1
+{ background-color: aqua;
+    font-size:20px;
+    color:red;
+}
+</style>
+<body>
+    
+      <input type="color" id="mybox">
+       
+        <p id="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium veritatis libero nisi quo quas dicta minus voluptatem reiciendis cum consectetur odio dolor distinctio tempora nihil facere laudantium, illo aliquid exercitationem!
+            Temporibus velit architecto, esse quis similique sunt sit. Et quod architecto blanditiis incidunt at labore quasi, similique quo expedita omnis, fugit eius tenetur illum sed delectus distinctio impedit? Asperiores, optio?
+            At modi, laudantium libero accusamus, minus, perspiciatis iste tempora nobis perferendis veritatis optio dolorum error ut. Autem ullam magnam debitis saepe dicta dignissimos numquam tenetur quibusdam! Accusantium blanditiis recusandae aperiam.
+       
+       
+        </p>
+    
+
+<script>
+var c = document.getElementById("mybox")
+var t = document.getElementById("text")
+
+c.onchange=function()
+{
+text.style.color=c.value
+t.style.color=c.value
+
+
+}
+
+</script>
+
+
+ <div id="box">
+  <input id="slider1" type="range" max="100" min="10" value="1">
+  <input type="color" id="mybox2">
+  <input type="color" id="mybox3">
+   <p id="tt">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus vitae repudiandae fugiat et quisquam dolor quis dolorem esse delectus iste sequi iure adipisci laboriosam at, mollitia odit, animi quaerat atque?
+   </p> 
+</div>
+<script>
+ var s = document.getElementById("slider1")
+ var p = document.getElementById("tt")
+ var d = document.getElementById("box")
+ var k = document.getElementById("mybox2")
+ var n = document.getElementById("mybox3")
+ s.onchange=function()
+ {
+  p.style.fontSize=s.value+"px"
+ }
+
+ k.onchange=function()
+{
+    p.style.color=k.value
+}
+
+n.onchange=function()
+{
+    d.style.background=n.value
+}
+
+</script>
+</body>
+</html>
