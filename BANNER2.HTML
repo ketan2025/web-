@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: 0.50s;
+}
+
+
+body
+{
+    background-color: rgb(64, 3, 3);
+}
+header{
+    width: 80%;
+    height: 400px;
+    //box-shadow:10px 10px 10px gray ;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px ;
+    color: aliceblue;
+}
+.hh
+{
+   
+}
+
+
+.pic
+{
+width: 60%;
+height: 50%;
+transition: 2s;
+position: absolute;
+box-shadow: 2px 2px 2px rgb(255, 255, 255);
+left: 170px;
+top: 80px;
+}
+</style>
+<body onload="runbanner()">
+
+    <input type="color" id="mybox" class="hh">
+    <input type="color" id="mybox2"class="hh">
+    <header>
+       <h1 id="text"> "Don't delay, purchase today!"</h1>
+        <img id="p7" src="images/bn7.jpg" class="pic">
+        <img id="p6" src="images/bn6.jpg" class="pic">
+        <img id="p5" src="images/bn5.jpg" class="pic">
+        <img id="p4" src="images/bn4.jpg" class="pic">
+        <img id="p3" src="images/bn3.jpg" class="pic">
+        <img id="p2" src="images/bn2.jpg" class="pic">
+        <img id="p1" src="images/bn1.jpg" class="pic">
+    </header>    
+<script>
+ 
+ var t =document.getElementById("text")
+ var g = document.getElementById("mybox2")
+ var b = document.getElementById("mybox")
+    var c = 0
+    var p1 = document.getElementById("p1")
+    var p2 = document.getElementById("p2")
+    var p3 = document.getElementById("p3")
+    var p4 = document.getElementById("p4")
+    var p5 = document.getElementById("p5")
+    var p6 = document.getElementById("p6")
+    var p7 = document.getElementById("p7")
+   
+   b.onchange=function()
+   {
+    document.body.style.background=b.value
+   }
+g.onchange=function()
+{
+    t.style.color=g.value
+}
+
+    function runbanner()
+    {
+     
+    setTimeout("runbanner()",2000)
+     
+     
+     
+     switch(c)
+     {
+      case 1 :
+        p1.style.opacity="0"
+      break;
+     
+      case 2 :
+        p2.style.opacity="0"
+      break;
+  
+      case 3 :
+        p3.style.opacity="0"
+      break;
+
+      case 4 :
+        p4.style.opacity="0"
+      break;
+
+
+      case 5 :
+        p5.style.opacity="0"
+      break;
+     
+      case 6 :
+        p6.style.opacity="0"
+      break;
+    
+      case 7 :
+        p7.style.opacity="1"
+      break;
+      
+      
+
+      case 8 :
+        p1.style.opacity="1"
+        p2.style.opacity="1"
+        p3.style.opacity="1"
+        p4.style.opacity="1"
+        p5.style.opacity="1"
+        p6.style.opacity="1"
+        p7.style.opacity="1"
+        
+      break;
+    }
+
+
+if (c<8)
+{
+    c++
+}
+ 
+else
+ {
+    c=1
+ }
+
+ document.title=c
+}
+
+
+</script>
+
+</body>
+</html>
