@@ -1,0 +1,151 @@
+<!doc type html>
+<html>
+<head> <title> web </title>
+</head>
+<style>
+#nav
+{display:flex}
+
+
+#navbar
+{margin-top: 20px;
+display:flex;
+
+float:right;
+    
+}
+#navbar ol
+{
+//background-color: aqua;
+padding: 2px;
+}
+#navbar ol li
+{list-style:none;
+display: inline;
+margin: 60px;
+font-size: 25px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+#logo
+{width:8%;
+margin-left:10px;}
+
+
+#banner
+{//background-color: aqua;
+width:100%;
+height:70%;}
+
+.pic
+{
+width: 80%;
+height: 70%;
+transition: 2s;
+position: absolute;
+box-shadow: 2px 2px 2px rgb(255, 255, 255);
+left: 140px;
+top: 110px;
+border-radius: 25px;
+}
+
+</style>
+<body onload="runbanner()">
+<div id ="nav">
+
+<div id ="logo">
+<img src="images/logo.png"width="70px;">
+</div>
+
+<div id ="navbar">
+<ol> 
+<li> Home </li>
+<li>Product </li>
+<li> Services </li>
+<li>Rating</li>
+<li> Contact </li>
+<li> Cart </li>
+</ol>
+</div>
+
+</div>
+
+<div id="banner">
+    
+ 
+    <img id="p5" src="images/sb5.jpg" class="pic">
+    <img id="p4" src="images/sb4.jpg" class="pic">
+    <img id="p3" src="images/sb3.jpg" class="pic">
+    <img id="p2" src="images/sb2.jpg" class="pic">
+    <img id="p1" src="images/sb1.jpg" class="pic">
+
+</div>
+<script>
+var c = 0
+var c = 0
+    var p1 = document.getElementById("p1")
+    var p2 = document.getElementById("p2")
+    var p3 = document.getElementById("p3")
+    var p4 = document.getElementById("p4")
+    var p5 = document.getElementById("p5")
+
+    function runbanner()
+    {
+     
+    setTimeout("runbanner()",3000)
+     
+     
+     
+     switch(c)
+     {
+      case 1 :
+        p1.style.opacity="0"
+      
+      break;
+     
+      case 2 :
+      
+      p2.style.opacity="0"
+
+      break;
+  
+      case 3 :
+        p3.style.opacity="0"
+      break;
+
+      case 4 :
+        p4.style.opacity="0"
+      break;
+
+
+      case 5 :
+        p1.style.opacity="1"
+        p2.style.opacity="1"
+        p3.style.opacity="1"
+        p4.style.opacity="1"
+        p5.style.opacity="1"
+      break;
+     }
+
+      if (c<8)
+{
+    c++
+}
+ 
+else
+ {
+    c=1
+ }
+
+    }
+
+
+
+
+</script>
+<div id="card">
+    
+</div>
+</body>
+</html>
