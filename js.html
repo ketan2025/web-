@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<style>
+    #logo img
+    {width:500px;
+    text-align: center;
+margin-left: 450px;}
+    #h1
+    {text-align: center;
+    cursor: pointer;}
+    #toggle{
+        font-size: 30px;
+        color: blueviolet;
+    }
+</style>
+<body>
+    <h1 id="h1">Jquey first</h1>  
+    <div id="logo"><img src="images/001.jpg""></div>
+    <div id="toggle">
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iusto ab repellendus ipsum quisquam omnis eum pariatur dignissimos quibusdam nesciunt ut, eos quos voluptatum dolorem dicta inventore, nam exercitationem laudantium.
+       Aliquam delectus repellendus expedita enim, adipisci deleniti nemo veniam nostrum reprehenderit, consequuntur nisi suscipit doloremque? Eum architecto tempore est quas necessitatibus? Quis doloremque esse quod veritatis corporis sint impedit officia. 
+    </div>
+    <script>
+        //$("#h1").hide(2000)
+       
+
+$(document).ready(function(){
+    $("#logo").hide(3000)
+    $("#h1").click(function()
+    {
+        $("#toggle").toggle(1000)
+    })
+
+})
+
+
+    
+    </script>   
+</body>
+</html>
