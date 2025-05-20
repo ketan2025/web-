@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<style>
+   .textstyle{
+    font-size: 20px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: 10px ridge rgb(136, 0, 0);
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+   } 
+   .mstyle{
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    color: aliceblue;
+    box-shadow: 10px,10px,10px black;
+   }
+</style>
+
+<body>
+<h1>
+    BREAKING NEWS
+</h1>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio accusantium aspernatur corporis sit, ipsa alias officia, aperiam fugiat id cupiditate tenetur, explicabo esse laudantium corrupti nesciunt unde adipisci dicta?
+    Quod recusandae deserunt, repudiandae, mollitia omnis sint officiis harum nisi eos numquam corporis, voluptate et quasi aliquam. Tenetur officiis cupiditate mollitia aperiam? Doloribus dolorum magnam voluptate beatae id facere itaque.
+</p>
+<script>
+    $(document).ready(function(){
+   //$("*").hide(1000);
+$("h1").addClass("textstyle").css({"font-size":"80px","cursor":"pointer"})
+$("p").css({"font-size":"30px",}).addClass("mstyle")
+
+
+
+$("h1").click(function(){
+
+$("p").slideToggle(1000)
+
+
+
+})
+
+
+    })
+</script>
+</body>
+</html>
